@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>Seconda pagina</h1>
+    
+    
+    <h1>Lista dipendenti</h1>
+    <div th:each = "dip : ${lista}">
+  <h3>Nome: <span th:text = "${dip.nome}"></span></h3>
+   <h3>Cognome: <span th:text = "${dip.cognome}"></span></h3>
+    <h3>Mansione: <span th:text = "${dip.mansione}"></span></h3>
+    </div>
+   
+    
+    <button onclick = "location.href='/'"> Go to home page</button>
+    
+   
+   
+</body>
+</html>

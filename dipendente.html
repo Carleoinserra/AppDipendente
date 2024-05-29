@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>Seconda pagina</h1>
+    
+    
+    <p th:text = "'Il seguente dipedente è stato inizializzato corretamente: '"></p>
+  <h3>Nome: <span th:text = "${dip.nome}"></span></h3>
+   <h3>Cognome: <span th:text = "${dip.cognome}"></span></h3>
+    <h3>Mansione: <span th:text = "${dip.mansione}"></span></h3>
+    
+   
+    
+    <button onclick = "location.href='/'"> Go to home page</button>
+    
+   
+   
+</body>
+</html>

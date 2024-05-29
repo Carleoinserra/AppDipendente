@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action ="AddDip" method ="post">
+
+Inserisci il nome <input type = "text" name  = "fname">
+<br>
+Inserisci il cognome <input type = "text" name  = "lname">
+<br>
+<select name="mansioni" id="cars">
+  <option value="operario">operaio</option>
+  <option value="contabile">contabile</option>
+  <option value="funzionario">funzionario</option>
+  <option value="dirigente">dirigente</option>
+</select>
+<br>
+ 
+<input type="submit" value = "add">
+</form>
+<hr>
+<h3> Cambia il cognome al dipendente</h3>
+<form action ="CambiaCognome" method ="post">
+Inserisci il cognome da cambiare <input type = "text" name  = "Oldlname">
+<br>
+<br>
+Inserisci il cognome <input type = "text" name  = "lname">
+<input type="submit" value = "change">
+</form>
+
+<h3> Cambia il nome al dipendente</h3>
+<form action ="CambiaNome" method ="post">
+Inserisci il cognome di cui vuoi cambiare il nome <input type = "text" name  = "lname">
+<br>
+<br>
+Inserisci il nome <input type = "text" name  = "fname">
+<input type="submit" value = "change">
+</form>
+
+
+
+</body>
+</html>
