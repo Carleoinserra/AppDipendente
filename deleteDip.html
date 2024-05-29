@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>Seconda pagina</h1>
+    
+    
+    <h1>Lista dipendenti</h1>
+    <form action = "delDip" method = "post">
+    <select name = "deleteDip">
+    <option th:each = "dip : ${lista}">
+<span th:text = "${dip.cognome}" th:value ="${dip.cognome}" ></span>
+
+    </option>
+    
+    </select>
+    <input type="submit" value = "cancella">
+   </form>
+    <br>
+    <br>
+    <hr>
+    <button onclick = "location.href='/'"> Go to home page</button>
+    
+   
+   
+</body>
+</html>

@@ -41,9 +41,9 @@ public class DipendenteJDBCTemp {
         return jdbcTemplateObject.update(query, nome, cognome);
     }
 
-    public int deleteDipendente(int id) {
-        String query = "DELETE FROM Dipendente WHERE id = ?";
-        return jdbcTemplateObject.update(query, id);
+    public int deleteDipendente(String cognome) {
+        String query = "DELETE FROM dip WHERE cognome = ?";
+        return jdbcTemplateObject.update(query, cognome);
     }
     
     public ArrayList<Dipendente> ritornaDip(){

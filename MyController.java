@@ -38,6 +38,27 @@ public class MyController {
 		 
 	 }
 	 
+	 @GetMapping("/deleteDip")
+	 public String deleteDip(Model model){
+		 ArrayList <Dipendente> lista = dipendenteJDBCTemp.ritornaDip();
+		 model.addAttribute("lista", lista);
+		 
+		 return "deleteDip";
+		 
+	 }
+	 
+	 @PostMapping("/delDip")
+	 public String delDip(@RequestParam("deleteDip") String Cognome) {
+		 
+		 dipendenteJDBCTemp.deleteDipendente(Cognome);
+		
+		 return "confermaDel";
+		 
+		 
+	 }
+	 
+	 
+	 
 	 @GetMapping("/getDip")
 	 public String getAll(Model model){
 		
